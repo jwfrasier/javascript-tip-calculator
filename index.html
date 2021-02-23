@@ -37,10 +37,8 @@
         function calculateTip() {
             var bill = document.querySelector('#bill').value;
             bill = Number(bill)
-
             var tipValue = document.querySelector('#tip').value;
             tipValue = Number(tipValue) / 100
-
             var finalAmount = bill + bill * tipValue;
             var total = document.querySelector('.total');
             total.innerHTML = finalAmount
