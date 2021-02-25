@@ -34,15 +34,17 @@
     <h3>The total amount with tip is: $ <span class="total"></span>
     </div>
     <script>
-        function calculateTip() {
-            var bill = document.querySelector('#bill').value;
-            bill = Number(bill)
-            var tipValue = document.querySelector('#tip').value;
-            tipValue = Number(tipValue) / 100
-            var finalAmount = bill + bill * tipValue;
-            var total = document.querySelector('.total');
-            total.innerHTML = finalAmount
-        }
+       function calculateTip(){
+        var bill = document.querySelector('#bill').value
+       bill = Number(bill)
+       var tip = document.querySelector('#tip').value
+       tip = Number(tip) / 100
+       var finalAmount = bill + bill * tip
+       var total = document.querySelector('.total')
+       total.innerHTML = finalAmount.toFixed(2)
+       }
+
+
     </script>
 </body>
 </html>
